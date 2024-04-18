@@ -34,7 +34,7 @@ public class PessoaControllers {
 
     @GetMapping
     private List<Pessoa> listaPessoa(){
-        return repository.lista();
+        return repository.listar();
 
     }
 
