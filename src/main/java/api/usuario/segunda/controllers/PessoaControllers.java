@@ -5,6 +5,8 @@ import api.usuario.segunda.repository.PessoaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/pessoa")
 public class PessoaControllers {
@@ -30,8 +32,11 @@ public class PessoaControllers {
 
     }
 
+    @GetMapping
+    private List<Pessoa> listaPessoa(){
+        return repository.lista();
 
-
+    }
 
 
 
