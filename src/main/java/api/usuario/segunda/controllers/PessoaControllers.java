@@ -30,7 +30,6 @@ public class PessoaControllers {
 
 
     }
-
     @GetMapping("/pessoa")
     private List<Pessoa> listaPessoa(){
         return repository.listar();
